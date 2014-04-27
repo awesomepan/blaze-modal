@@ -1,6 +1,8 @@
 blaze-modal
 =========================
 
+**Note: You'll probably just be happier using the Bootstrap3 modal js.  This package almost is awesome, but has some critical layout issues that's currently preventing it from being useful.  I'd remove it from Atmosphere if there were controls.  But there are not.  So.**  
+
 Modal dialogs using the new Meteor Blaze rendering engine.  
 
 So, after trying probably five or six libraries for creating overlays, I said to heck with it, I'm just going to write a native overlay template for Meteor.  Dead simple, super easy to use, and works like charm. 
