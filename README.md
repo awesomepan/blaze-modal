@@ -11,8 +11,22 @@ So, after trying probably five or six libraries for creating overlays, I said to
 First, install the reactive-overlays package from the command line, like so:
 
 ````
-mrt add reactive-overlays
+mrt add blaze-modal
 ````
+
+Alternatively, if you'd like to bypass Atmosphere, and install directly from GitHub, you could update your application's smart.json file, like so:
+
+````
+{
+  "meteor": {
+    "branch": "master"
+  },
+  "packages": {
+    "accounts-entry-js": {
+      "git": "https://github.com/awatson1978/blaze-modal.git"
+    }
+  }
+}
 
 =========================
 ### Document Object Model
