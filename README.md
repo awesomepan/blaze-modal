@@ -22,7 +22,7 @@ Alternatively, if you'd like to bypass Atmosphere, and install directly from Git
     "branch": "master"
   },
   "packages": {
-    "accounts-entry-js": {
+    "blaze-modal": {
       "git": "https://github.com/awatson1978/blaze-modal.git"
     }
   }
