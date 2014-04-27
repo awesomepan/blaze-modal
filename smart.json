@@ -3,6 +3,6 @@
     "description": "Meteorite package to add image and tutorial overlays, using reactive spark templates.",
     "homepage": "https://github.com/awatson1978/reactive-overlays",
     "author": "Abigail Watson  (http://www.pentasyllabic.com)",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "git": "https://github.com/awatson1978/reactive-overlays.git"
 }
