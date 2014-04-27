@@ -1,18 +1,36 @@
-Meteorite package to add image and tutorial overlays, using reactive spark templates.
+blaze-modal
+=========================
 
-So, after trying probably five or six libraries for creating overlays, I said to heck with it, I'm just going to write a native overlay template for Meteor.  Dead simple, super easy to use, and works like charm.  Enjoy!
+Modal dialogs using the new Meteor Blaze rendering engine.  
 
-------------------------
+So, after trying probably five or six libraries for creating overlays, I said to heck with it, I'm just going to write a native overlay template for Meteor.  Dead simple, super easy to use, and works like charm. 
+
+=========================
 ### Installation
 
 First, install the reactive-overlays package from the command line, like so:
 
 ````
-mrt add reactive-overlays
+mrt add blaze-modal
 ````
 
-------------------------
-### Document Model
+Alternatively, if you'd like to bypass Atmosphere, and install directly from GitHub, you could update your application's smart.json file, like so:
+
+````
+{
+  "meteor": {
+    "branch": "master"
+  },
+  "packages": {
+    "blaze-modal": {
+      "git": "https://github.com/awatson1978/blaze-modal.git"
+    }
+  }
+}
+````
+
+=========================
+### Document Object Model
 
 Second, add the reactiveOverlaysTemplate to your application, which adds the nececssary overlay templates.  In theory, you should be able to add the template just about anywhere in the application, but the recommend location is at the footer of your application container.  So, something like so:  
 
@@ -25,7 +43,7 @@ Second, add the reactiveOverlaysTemplate to your application, which adds the nec
 </template>
 ````
 
-------------------------
+=========================
 ### Controllers
 
 The beauty of using a native spark template for creating an overlay, instead of a third party library, is the only thing you need to do is set the following Session variable, and Bam! You got an overlay!
@@ -63,14 +81,7 @@ Template.samplePageTemplate.events({
 });
 ````
 
-------------------------
+=========================
 ### License
 
 MIT License. Use as you wish, including for commercial purposes.  
-See license.mit.txt for full details.  
-
-------------------------
-### Support
-Found this package to be useful?  Consider tipping the package maintainer for their time!  
-
-[![Support via Gittip](https://raw.github.com/gittip/www.gittip.com/master/www/assets/gittip.png)](https://www.gittip.com/awatson1978/)  
